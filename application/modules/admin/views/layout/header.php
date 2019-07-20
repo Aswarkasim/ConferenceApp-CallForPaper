@@ -1,22 +1,24 @@
-<?php 
-    //dapatkan id user yang didaftarkan saat login
-    // $id_user = $this->session->userdata('id_user');
-    // $user_aktif = $this->user_model->detail($id_user);
-    // $konfigurasi = $this->konfigurasi_model->listing();
-  ?>
+<?php
+//dapatkan id user yang didaftarkan saat login
+// $id_user = $this->session->userdata('id_user');
+// $user_aktif = $this->user_model->detail($id_user);
+// $konfigurasi = $this->konfigurasi_model->listing();
+?>
 
 
-  <?php 
-	$id_user = $this->session->userdata('id_user');
-	$user_aktif = $this->Crud_model->listingOne('tbl_user','id_user',$id_user);
- 
- ?>
+<?php
+$id_user = $this->session->userdata('id_user');
+$user_aktif = $this->Crud_model->listingOne('tbl_user', 'id_user', $id_user);
+
+$konfigurasi  = $this->Crud_model->listingOne('tbl_konfigurasi', 'id_konfigurasi', '1');
+
+?>
 
 <!-- start: header -->
 <header class="header">
 	<div class="logo-container">
 		<a href="../" class="logo">
-			<img src="<?php echo base_url('assets/octopus/') ?>assets/images/logo.png" height="35" alt="JSOFT Admin" />
+			<img src="<?= base_url('assets/uploads/images/konfigurasi/' . $konfigurasi->logo) ?>" height="35" alt="JSOFT Admin" />
 		</a>
 		<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 			<i class="fa fa-bars" aria-label="Toggle sidebar"></i>

@@ -37,7 +37,6 @@
                     echo form_open_multipart('payment_part')
 
                 ?>
-
                 <form action="" method="post">
 
                 <div class="row pt20">

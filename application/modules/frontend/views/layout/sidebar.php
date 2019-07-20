@@ -11,6 +11,6 @@
 
 <div class="blog-widget">
     <h5>Shorcut</h5>
-    <button type="button" class="btn btn-lg btn-warning btn-ghost btn-block" name="button"><i class="fas fa-sign-in-alt"></i> Register</button>
-    <button type="button" class="btn btn-lg btn-warning btn-ghost btn-block" name="button"><i class="fas fa-user-plus"></i> Register</button>
+    <a href="<?= base_url('profil') ?>" class="btn btn-lg btn-warning btn-ghost btn-block" name="button"><i class="fas fa-user"></i> Profil</a>
+    <a href="<?= base_url('logout_partcipant') ?>" class="btn btn-lg btn-warning btn-ghost btn-block" name="button"><i class="fa fa-sign-out-alt"></i> Logout</a>
 </div>
